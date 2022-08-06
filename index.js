@@ -113,10 +113,10 @@ app.get('/login', (req, res) => {
 // })
 
 
-
+console.log("helo0");
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 }).then(res => {
     console.log("Connected Succesfully");
 }).catch(err => {
